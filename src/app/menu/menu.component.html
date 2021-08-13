@@ -1,0 +1,10 @@
+<header>
+    
+    <nav class = "navbar navbar-expand-md navbar-dark bg-dark">
+        <h1 style="color: brown"> To Do Application </h1>
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li> <a *ngIf= 'authenticationService.isUserLoggedIn()' routerLink = "/logout" style="text-decoration: none" class="navbar-link">Logout</a> </li>
+            <li> <h3><a *ngIf= '!authenticationService.isUserLoggedIn()' style="text-decoration: none" routerLink = "/login" class="navbar-link">Login</a></h3> </li>
+        </ul>
+    </nav>
+</header>   

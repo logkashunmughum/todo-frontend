@@ -1,0 +1,21 @@
+<h1> Update Todo </h1>
+<div class="container">
+
+    <form (ngSubmit) = "!todoForm.invalid && saveTodo()" #todoForm = "ngForm">
+    <fieldset class="form-group">
+        <label> Title </label>
+            <input type="text" name="title" class= "form-control" [(ngModel)] = "todo.title" required="required">
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label> Description </label>
+            <input type="text" name="description" class= "form-control" [(ngModel)] = "todo.description" required="required">
+    </fieldset>
+
+    
+<div>
+<button class="btn btn-success" type = "submit" > Save </button>
+</div>
+
+</form>
+</div>
