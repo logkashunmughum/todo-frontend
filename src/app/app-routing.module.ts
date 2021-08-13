@@ -8,7 +8,7 @@ import { RouteGuardService } from './service/route-guard.service';
 import { UpdatetodoComponent } from './updatetodo/updatetodo.component';
 
 const routes: Routes = [
-  {path :'home', component : HomeComponent, canActivate : [RouteGuardService]},
+  {path :'home/:name', component : HomeComponent, canActivate : [RouteGuardService]},
   {path :'login', component : LoginComponent},
   {path:'', component : LoginComponent},
   {path:'logout', component: LogoutComponent, canActivate : [RouteGuardService]},
